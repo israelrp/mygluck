@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="0834fb5f-84c2-4e2c-89f7-4b5017e5ae9c"
+  name="MyGluck.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="77a9be40-88e2-4a6a-9c9c-090956119c02"
+        name="Usuario organizador"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="30bb78eb-f33f-41f9-a937-ab71120bd2bf"
+            isDerived="false"
+            sourceEndRoleName="Usuario organizador"
+            targetEndRoleName="Registra un evento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b1ae40f5-e5ec-4fa4-8cd0-57aa53950bdf"
+              LastKnownName="Se registra en el sitio"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8bb19674-b051-44b7-a00b-68330e837844"
+                  name="Usuario organizador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10807cf5-ec79-40ba-ad99-a2d24efb3caa"
+                  name="Registra un evento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+        name="MyGluck"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b1ae40f5-e5ec-4fa4-8cd0-57aa53950bdf"
+        name="Se registra en el sitio"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2be0c230-56de-4bd4-a3a9-150849c08e0f"
+            isDerived="false"
+            sourceEndRoleName="Se registra en el sitio"
+            targetEndRoleName="Usuario organizador logueado"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="08fdbe0b-6830-4ba9-9216-e10683273a57"
+              LastKnownName="Usuario organizador logueado"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b3dfbf33-41f1-4ef2-a196-83d29f5a0902"
+                  name="Se registra en el sitio"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05dd7c98-df03-49e6-a97c-331215b10e73"
+                  name="Usuario organizador logueado"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+            LastKnownName="MyGluck"
+            LastKnownLocation="MyGluck.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2e368fc9-f6b1-4698-92e8-31ec46462e20"
+        name="Registrar eventos que vaya a tener"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+            LastKnownName="MyGluck"
+            LastKnownLocation="MyGluck.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="08fdbe0b-6830-4ba9-9216-e10683273a57"
+        name="Usuario organizador logueado"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="23d86e51-fb70-48ae-bcf4-5064256cfa69"
+            isDerived="false"
+            sourceEndRoleName="Usuario organizador logueado"
+            targetEndRoleName="Registrar eventos que vaya a tener"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2e368fc9-f6b1-4698-92e8-31ec46462e20"
+              LastKnownName="Registrar eventos que vaya a tener"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="725c54f0-a282-4240-9b0f-fccce0c4bb42"
+                  name="Usuario organizador logueado"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b7382c0-2319-4e81-a9e0-693082ac5ec8"
+                  name="Registrar eventos que vaya a tener"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5f4118fc-4fbb-46fe-9fd9-c987c1be13c1"
+            isDerived="false"
+            sourceEndRoleName="Usuario organizador logueado"
+            targetEndRoleName="Personaliza su sitio web del evento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="eb513543-3dc7-46e8-b400-0ce6ad31c578"
+              LastKnownName="Personaliza su sitio web de un evento"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="41f105d5-eb38-42e1-b041-1cc3fb23b59e"
+                  name="Usuario organizador logueado"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c819d789-7f03-41d3-a217-977f858d82da"
+                  name="Personaliza su sitio web del evento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="96ef9ab5-ce0b-49a8-afe4-0000cb89ded7"
+            isDerived="false"
+            sourceEndRoleName="Usuario organizador logueado"
+            targetEndRoleName="Agrega una mesa de regalos"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="975a0f54-1f94-4857-9475-d18e1ce56847"
+              LastKnownName="Agrega una mesa de regalos"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf1fd1f2-3428-4ae5-b922-5b96f25f2f4b"
+                  name="Usuario organizador logueado"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d294f551-b77e-40f9-81fe-b9c3fda4811e"
+                  name="Agrega una mesa de regalos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ab94eca4-b703-42b7-bcef-8649b5937a47"
+            isDerived="false"
+            sourceEndRoleName="Usuario organizador logueado"
+            targetEndRoleName="Registrar invitados al evento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bbe8e89b-7bd7-4648-b924-6fc12b8e08ea"
+              LastKnownName="Registrar invitados al evento"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d7edc940-89fe-48c3-9272-c52169b0e027"
+                  name="Usuario organizador logueado"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba0fd2ef-01a0-4cba-86b8-80d2116bc4cf"
+                  name="Registrar invitados al evento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b40a4bff-25b4-4d8a-9f46-3dfcfbd54bad"
+            isDerived="false"
+            sourceEndRoleName="Usuario organizador logueado"
+            targetEndRoleName="Personalizar invitación"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="68c14c1f-44c6-48b7-a507-84faacc46a2e"
+              LastKnownName="Personalizar invitación"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90c044f0-55ff-4241-840e-c0bba0fcad1f"
+                  name="Usuario organizador logueado"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a906329-1cac-4f9f-898c-a39fc3b878a1"
+                  name="Personalizar invitación"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eb513543-3dc7-46e8-b400-0ce6ad31c578"
+        name="Personaliza su sitio web de un evento"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+            LastKnownName="MyGluck"
+            LastKnownLocation="MyGluck.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="975a0f54-1f94-4857-9475-d18e1ce56847"
+        name="Agrega una mesa de regalos"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="79c304da-ffef-4dee-8e1e-8dd29579f17c">
+            <useCaseMoniker
+              Id="a45d3106-0bea-4366-a8ff-f4514b4fa8b7"
+              LastKnownName="Elige sus regalos y la cantidad que necesita"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+            LastKnownName="MyGluck"
+            LastKnownLocation="MyGluck.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a45d3106-0bea-4366-a8ff-f4514b4fa8b7"
+        name="Elige sus regalos y la cantidad que necesita"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+            LastKnownName="MyGluck"
+            LastKnownLocation="MyGluck.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bbe8e89b-7bd7-4648-b924-6fc12b8e08ea"
+        name="Registrar invitados al evento"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+            LastKnownName="MyGluck"
+            LastKnownLocation="MyGluck.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="68c14c1f-44c6-48b7-a507-84faacc46a2e"
+        name="Personalizar invitación"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+            LastKnownName="MyGluck"
+            LastKnownLocation="MyGluck.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a5527a0c-b28b-480a-b6e5-c97f63b1dd46"
+        name="Enviar invitación"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c47cd2e3-3012-45a5-9eed-133364a60de2">
+            <useCaseMoniker
+              Id="68c14c1f-44c6-48b7-a507-84faacc46a2e"
+              LastKnownName="Personalizar invitación"
+              LastKnownLocation="MyGluck.Modeling.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="c03f3f8d-11cc-4654-86d8-11276f5c21dc"
+            LastKnownName="MyGluck"
+            LastKnownLocation="MyGluck.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

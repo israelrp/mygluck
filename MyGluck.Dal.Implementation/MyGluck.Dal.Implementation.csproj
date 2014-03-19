@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2390428-0D6E-4055-9F92-B6FAED80417D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyGluck.Dal.Implementation</RootNamespace>
+    <AssemblyName>MyGluck.Dal.Implementation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\110\Shared\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstracts\BaseDaoImpl.cs" />
+    <Compile Include="CategoryDaoImpl.cs" />
+    <Compile Include="CountryDaoImpl.cs" />
+    <Compile Include="EventDaoImpl.cs" />
+    <Compile Include="EventPhotoDaoImpl.cs" />
+    <Compile Include="EventTypeDaoImpl.cs" />
+    <Compile Include="GiftTableDaoImpl.cs" />
+    <Compile Include="GuestDaoImpl.cs" />
+    <Compile Include="GuestStatusDaoImpl.cs" />
+    <Compile Include="InvitationSettingDaoImpl.cs" />
+    <Compile Include="PackageDaoImpl.cs" />
+    <Compile Include="PackageProductDaoImpl.cs" />
+    <Compile Include="PaymentDaoImpl.cs" />
+    <Compile Include="ProductDaoImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProviderDaoImpl.cs" />
+    <Compile Include="SaleDaoImpl.cs" />
+    <Compile Include="ScheduleDaoImpl.cs" />
+    <Compile Include="SectionDaoImpl.cs" />
+    <Compile Include="SectionTypeDaoImpl.cs" />
+    <Compile Include="SiteConfigurationDaoImpl.cs" />
+    <Compile Include="StateDaoImpl.cs" />
+    <Compile Include="ThemeDaoImpl.cs" />
+    <Compile Include="UnitDaoImpl.cs" />
+    <Compile Include="UserProfileDaoImpl.cs" />
+    <Compile Include="webpages_MembershipDaoImpl.cs" />
+    <Compile Include="webpages_OAuthMembershipDaoImpl.cs" />
+    <Compile Include="webpages_RoleDaoImpl.cs" />
+    <Compile Include="webpages_UsersInRoleDaoImpl.cs" />
+    <Compile Include="WishListDaoImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyGluck.Connection\MyGluck.Connection.csproj">
+      <Project>{c30f87fe-7210-416a-bedf-3026d539e69d}</Project>
+      <Name>MyGluck.Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyGluck.Dal\MyGluck.Dal.csproj">
+      <Project>{abf27982-3326-4483-ae89-964fb35f2c2c}</Project>
+      <Name>MyGluck.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyGluck.Domain\MyGluck.Domain.csproj">
+      <Project>{b25f423e-c74a-49ac-a4dc-448cef609e63}</Project>
+      <Name>MyGluck.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+@Styles.Render("~/content/bootstrap/base")
+@Styles.Render("~/content/bootstrap/base")
+@Styles.Render("~/content/toastr")
+@Styles.Render("~/content/css")
+@Styles.Render("~/content/angular")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/angular")
+@Scripts.Render("~/bundles/toastr")
+@Scripts.Render("~/bundles/bootstrap")
+<div ng-app="app">
+    <h1>Categories</h1>
+    <div crud-grid table-name='category'></div>
+</div>
+
+
+
