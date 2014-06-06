@@ -40,7 +40,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\Encryptor.cs" />
+    <Compile Include="Tools\TokenGenerator.cs" />
+    <Compile Include="UserManager.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyGluck.Connection\MyGluck.Connection.csproj">
+      <Project>{c30f87fe-7210-416a-bedf-3026d539e69d}</Project>
+      <Name>MyGluck.Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyGluck.Dal.Implementation\MyGluck.Dal.Implementation.csproj">
+      <Project>{d2390428-0d6e-4055-9f92-b6faed80417d}</Project>
+      <Name>MyGluck.Dal.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyGluck.Domain\MyGluck.Domain.csproj">
+      <Project>{b25f423e-c74a-49ac-a4dc-448cef609e63}</Project>
+      <Name>MyGluck.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
