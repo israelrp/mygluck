@@ -208,6 +208,8 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\collage.jpg" />
+    <Content Include="Images\logo.png" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
@@ -534,6 +536,7 @@
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Catalogos\Index.cshtml" />
     <Content Include="Scripts\toastr.min.js.map" />
+    <Content Include="Views\Shared\_LayoutComercial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

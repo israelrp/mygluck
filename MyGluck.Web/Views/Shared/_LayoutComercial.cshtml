@@ -1,0 +1,44 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Scripts/jquery-1.10.2.js" type="text/javascript" rel="alternate" />
+    <link href="~/Scripts/angular.min.js" type="text/javascript" rel="alternate" />
+    <link href="~/Scripts/bootstrap.min.js" type="text/javascript" rel="alternate" />
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<body>
+    <div class="container">
+        <div style="float:right;">
+            <div style="padding-top:25px;">
+                @using(Html.BeginForm())
+                {
+                    <input type="text" placeholder="Email" name="Usuario"/>
+                    <input type="password" placeholder="Password" name="Password"/>
+                    <input type="button" value="Entrar"/>
+                }
+            </div>
+        </div>
+        <img width="80" src="~/Images/logo.png" alt="MyGluck" />
+        <label style="font-size:40px; position:absolute; margin-left:20px; margin-top:15px;">MyGluck</label>
+    </div>
+    <hr />
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - MyGluck by Novatek</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
