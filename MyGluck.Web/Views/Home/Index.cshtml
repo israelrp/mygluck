@@ -1,31 +1,50 @@
 ﻿@{
     Layout = "~/Views/Shared/_LayoutComercial.cshtml";   
 }
+<script src="../../Scripts/bootstrap-select.js" type="text/javascript"></script>
+<link href="../../Content/bootstrap-select.css" rel="stylesheet" />
 
-<div style="width:100%; height:500px; background-image:url('../../Images/collage.jpg'); background-size:cover;">
+<script type="text/javascript">
+    $(window).on('load', function () {
+
+        $('.selectpicker').selectpicker();
+
+    });
+</script>
+
+<div class="panel-home-singup">
     <div style="float:left;;">
-        <div style="width:600px; height:400px; margin:50px;">
-            <iframe width="600" height="400" src="//www.youtube.com/embed/KQ6zr6kCPj8?rel=0" frameborder="0" allowfullscreen></iframe>
+        <div style="width:150%; height:400px; margin:50px;">
+            <iframe style="width:100%; height:100%;" src="//www.youtube.com/embed/KQ6zr6kCPj8?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     <div style="float:right;">
-        <div class="panel" style="width:300px; height:400px; margin:50px;">
+        <div class="panel singup-form">
             @using (Html.BeginForm())
             {
-                <input class="form-control" type="email" placeholder="Email"/>
-                <input class="form-control"  type="number" placeholder="Edad" />
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                        Dropdown
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                    </ul>
+                <div class="form-group text-center">
+                    <input class="form-control" type="text" placeholder="Nombre" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Apellidos" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Contraseña" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Confirmar contraseña" />
+                </div>
+                <div class="form-group">
+                    <select class="selectpicker" >
+                        <option>Puebla</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default">REGISTRARSE</button>
+                    <button class="btn btn-primary">FACEBOOK</button>
                 </div>
             }
         </div>
