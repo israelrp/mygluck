@@ -1,0 +1,49 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Scripts/angular.min.js" type="text/javascript" rel="alternate" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div style="width: 100%; background-color: #416F95; padding-top: 20px; padding-bottom: 20px; margin-bottom: 30px; color:white;" >
+        <div class="container">
+            <div style="float:right;">
+                <div style="padding-top:25px;">
+                    @using (Html.BeginForm("", "", FormMethod.Post, new { @class = "navbar-form navbar-left" }))
+                    {
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Email" name="Usuario" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" placeholder="Password" name="Password" />
+                        </div>
+                        <input class="btn btn-default" type="button" value="Entrar" />
+                    }
+                </div>
+            </div>
+            <img width="50" src="~/Images/logo.png" alt="MyGluck" />
+            <label style="font-size:30px; position:absolute; margin-left:20px; margin-top:15px;">MyGluck</label>
+            <div style="padding-top:10px;">
+                <span>Crea, imagina, organiza y disfruta...</span>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - MyGluck by Novatek</p>
+        </footer>
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
