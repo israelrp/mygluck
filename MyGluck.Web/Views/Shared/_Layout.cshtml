@@ -1,46 +1,49 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link href="~/Scripts/jquery-1.10.2.js" type="text/javascript" rel="alternate" />
     <link href="~/Scripts/angular.min.js" type="text/javascript" rel="alternate" />
-    <link href="~/Scripts/bootstrap.min.js" type="text/javascript" rel="alternate" />
-</head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", null, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
-    </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div class="header-home" style="padding-top:10px; padding-bottom:0px;">
+        <div class="container">
+            <div style="float:right;">
+                <div>
+                    @using (Html.BeginForm("Logout", "Social", FormMethod.Post, new { @class = "navbar-form navbar-left" }))
+                    {
+                        <a class="btn btn-link" style="color:white; padding-left:0px;" href="#">
+                            <div class="form-group">
+                                <img width="42" src="../../Images/foto.jpg" alt="Photo" />
+                            </div>
+                            <div class="form-group">
+                                <span>Israel Romero Ponce</span>
+                            </div>
+                        </a>
+                        <input class="btn btn-default" type="submit" value="Salir" />
+                    }
+                </div>
+            </div>
+            <img width="40" src="~/Images/logo.png" alt="MyGluck" style="margin-top:10px;" />
+            <label style="font-size:20px; position:absolute; margin-left:20px; margin-top:17px;">MyGluck</label>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+        <hr />
+        <footer style="text-align:center;">
+            <a class="btn btn-link">Ver términos y condiciones</a>
+            <p>&copy; @DateTime.Now.Year - MyGluck by Novatek</p>
+        </footer>
+    </div>
     @RenderSection("scripts", required: false)
 </body>
 </html>

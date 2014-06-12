@@ -188,6 +188,7 @@
     <Compile Include="Controllers\CatalogosController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SocialController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -213,6 +214,7 @@
     <Content Include="Images\collage.jpg" />
     <Content Include="Images\fondo.png" />
     <Content Include="Images\fondo2.png" />
+    <Content Include="Images\foto.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -547,6 +549,7 @@
     <Content Include="Views\Catalogos\Index.cshtml" />
     <Content Include="Scripts\toastr.min.js.map" />
     <Content Include="Views\Shared\_LayoutComercial.cshtml" />
+    <Content Include="Views\Social\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

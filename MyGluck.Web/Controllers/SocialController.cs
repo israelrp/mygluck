@@ -6,19 +6,19 @@ using System.Web.Mvc;
 
 namespace MyGluck.Web.Controllers
 {
-    public class HomeController : Controller
+    public class SocialController : Controller
     {
+        //
+        // GET: /Social/
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
             return View();
         }
 
         [HttpPost]
-        public RedirectResult Login()
+        public RedirectResult Logout()
         {
-            return Redirect("~/Social");
+            return Redirect("~");
         }
-    }
+	}
 }

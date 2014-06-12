@@ -13,14 +13,10 @@
 </script>
 
 <div class="panel-home-singup">
-    <div style="float:left;;">
-        <div style="width:150%; height:400px; margin:50px;">
-            <iframe style="width:100%; height:100%;" src="//www.youtube.com/embed/KQ6zr6kCPj8?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
+
     <div style="float:right;">
         <div class="panel singup-form">
-            <h5>REGISTRATE AQUÍ</h5>
+            <h5 style="color: white; font-weight: bold;">REGISTRATE AQUÍ</h5>
             @using (Html.BeginForm())
             {
                 <div class="form-group text-center">
@@ -45,9 +41,20 @@
                 </div>
                 <div class="form-group">
                     <button class="btn btn-default">REGISTRARSE</button>
+                </div>
+                <div class="form-group">
                     <button class="btn btn-primary">FACEBOOK</button>
+                    <button class="btn btn-info">TWITTER</button>
                 </div>
             }
         </div>
     </div>
+    <div>
+        <div class="video-container">
+            <iframe src="//www.youtube.com/embed/KQ6zr6kCPj8?rel=0" frameborder="0" width="560" height="315" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div>
+
 </div>
