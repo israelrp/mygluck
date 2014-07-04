@@ -15,6 +15,11 @@ namespace MyGluck.Web.Controllers
             return View();
         }
 
+        public PartialViewResult _MenuLateral()
+        {
+            return PartialView();
+        }
+
         [HttpPost]
         public RedirectResult Logout()
         {

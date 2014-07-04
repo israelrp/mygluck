@@ -1,59 +1,20 @@
 ﻿<div>
-
-    @*<div class="pull-left" style="width: auto; border: 1px solid #eeeeee; padding: 10px; max-width:200px;">
-        <div>
-            <button class="btn btn-primary">Crear un evento</button>
-        </div>
-        <hr />
-        <a class="btn btn-link">Mis eventos</a>
-        <hr />
-        <a class="btn btn-link">Mis invitaciones</a>
-        <hr />
-        <a class="btn btn-link">Amigos/Invitados</a>
-    </div>
-    <div class="pull-right" style="width: auto; border: 1px solid green; padding: 10px; max-width: 200px;">
-
-    </div>
-    <div class="container" style="border:1px solid red;">
-
-    </div>*@
-    <div class="row">
-        <div class="col-xs-2">
-            <div>
-                <button class="btn btn-primary">Crear un evento</button>
+    <div style="display:table; width:100%;">
+        <div style="display:table-row;">
+            <div style="display:table-cell; width:15%;">
+                @{ Html.RenderAction("_MenuLateral", "Social"); }
             </div>
-            <hr />
-            <a class="btn btn-link">Mis eventos</a>
-            <hr />
-            <a class="btn btn-link">Mis invitaciones</a>
-            <hr />
-            <a class="btn btn-link">Amigos/Invitados</a>
-        </div>
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-md-2 col-md-push-8" style="border:1px solid red;">
-                    <div class="table">
-                        <div class="row">
-                            <div class="col">
-                                <p>asdasdasdadasdasdasdsd</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <p>asdasdasdadasdasdasdsd</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <p>asdasdasdadasdasdasdsd</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8 col-md-pull-2" style="border:1px solid green;">
-
-                </div>
+            <div style="display:table-cell; width:70%;">
+                <h2>Bienvenido Israel Romero Ponce</h2>
+                <h4>Empieza con crear tu primer evento</h4>
+                <button class="btn btn-primary">
+                    Crear un evento
+                </button>
+            </div>
+            <div style="display:table-cell; width:15%; font-size:10px;">
+                @{ Html.RenderAction("_ProductosMasVendidos", "Tienda"); }
             </div>
         </div>
     </div>
+
 </div>

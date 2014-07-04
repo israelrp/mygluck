@@ -189,6 +189,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SocialController.cs" />
+    <Compile Include="Controllers\TiendaController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,6 +217,10 @@
     <Content Include="Images\fondo2.png" />
     <Content Include="Images\foto.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\salondefiestas.jpg" />
+    <Content Include="Images\salondefiestas2.jpg" />
+    <Content Include="Images\salondefiestas3.jpg" />
+    <Content Include="Images\salondefiestas4.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
@@ -550,6 +555,8 @@
     <Content Include="Scripts\toastr.min.js.map" />
     <Content Include="Views\Shared\_LayoutComercial.cshtml" />
     <Content Include="Views\Social\Index.cshtml" />
+    <Content Include="Views\Tienda\_ProductosMasVendidos.cshtml" />
+    <Content Include="Views\Social\_MenuLateral.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
